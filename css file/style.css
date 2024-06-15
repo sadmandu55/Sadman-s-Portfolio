@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,943;1,6..12,943&display=swap');
+
 
 :root{
-    --bg-color: #5DC2FF;
+    --bg-color: #ffffff;
     --main-color: #D6EAF8;
     --text-color: #003457;
 
@@ -18,8 +19,10 @@
     border: none;
 }
 html{
-    font-size: 1rem;
-    overflow: hidden;
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 body{
@@ -29,7 +32,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 160px 1.44px 32px;
+    padding: 10rem 9% 2rem;
 }
 
 .header{
@@ -37,11 +40,148 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 32px 1.44px;
+    padding: 2rem 9%;
     background: var(--bg-color);
     justify-content: space-between;
     z-index: 100;
     align-items: center;
+    position: fixed;
 }
 
+.logo{
+
+    font-size: 2.5rem;
+    font-weight: 900;
+    cursor: default;
+    text-decoration: none;
+    margin-left: 2px;
+    background: rgb(61,120,255);
+    background: linear-gradient(90deg, rgba(61,120,255,1) 0%, rgba(198,121,255,1) 100%, rgba(31,44,209,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a{
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+.navbar a:hover{
+    background: rgb(38,0,255);
+    background: linear-gradient(90deg, rgba(38,0,255,1) 0%, rgba(255,75,193,1) 100%, rgba(31,44,209,1) 100%);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+#bar{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+    
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 800;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    background: rgb(38,0,255);
+    background: linear-gradient(90deg, rgba(38,0,255,1) 0%, rgba(255,75,193,1) 100%, rgba(31,44,209,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.home-content h1{
+    font-size: 5.6rem;
+    font-weight: 900;
+    line-height: 1.3;
+    background: rgb(61,120,255);
+    background: linear-gradient(90deg, rgba(61,120,255,1) 0%, rgba(198,121,255,1) 100%, rgba(31,44,209,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.home-image img{
+    width: 25vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    
+    0% {
+            transform: translateY(0);
+    }
+    50% {
+           transform: translateY(-2.4rem);
+    }
+    100% {
+            transform: translateY(0);
+    }
+}
+
+.home-content p{
+    font-size: 1.6rem;
+}
+
+.social-icon a{
+
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    margin: 3rem 1.5rem 3rem 0;
+    font-size: 2rem;
+    background: transparent;
+    color: #003457;
+    border: .2rem solid black ;
+    border-radius: 50%;
+    transition: .5s ease;
+
+}
+
+.social-icon a:hover{
+    background: rgb(61,120,255);
+    background: linear-gradient(90deg, rgba(61,120,255,1) 0%, rgba(198,121,255,1) 100%, rgba(31,44,209,1) 100%);
+    background-clip: text;
+    color: transparent;
+    box-shadow: 0 0 1rem #003457;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #003457;
+    background: rgb(169,154,255);
+background: linear-gradient(90deg, rgba(169,154,255,1) 0%, rgba(255,196,235,1) 100%, rgba(31,44,209,1) 100%);
+    border-radius: 4rem;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    background: rgb(61,120,255);
+    background: linear-gradient(90deg, rgba(61,120,255,1) 0%, rgba(198,121,255,1) 100%, rgba(31,44,209,1) 100%);
+    background-clip: text;
+    color: transparent;
+    box-shadow: 0 0 1rem #98cfff;
+}
 
