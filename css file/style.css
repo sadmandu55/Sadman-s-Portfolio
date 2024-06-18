@@ -13,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smooth;
     font-family: "Nunito Sans", sans-serif;
     outline: none;
     border: none;
@@ -23,6 +22,7 @@ html{
     /* overflow: hidden; */
     text-decoration: none;
     font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -63,7 +63,7 @@ section{
 
 .navbar a{
     font-size: 1.5rem;
-    margin-left: 8rem;
+    margin-left: -18rem;
     color: var(--text-color);
     text-decoration: none;
     font-weight: 700;
@@ -173,7 +173,7 @@ span{
     font-size: 1.4rem;
     /* color: #003457; */
     background: rgb(169,154,255);
-background: linear-gradient(90deg, rgba(169,154,255,1) 0%, rgba(255,196,235,1) 100%, rgba(31,44,209,1) 100%);
+    background: linear-gradient(90deg, rgba(169,154,255,1) 0%, rgba(255,196,235,1) 100%, rgba(31,44,209,1) 100%);
     border-radius: 4rem;
     transition: .5s ease;
 }
@@ -191,7 +191,7 @@ background: linear-gradient(90deg, rgba(169,154,255,1) 0%, rgba(255,196,235,1) 1
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--bg-color);
+    background: #fffafa;
 }
 
 .about-image img{
@@ -200,7 +200,7 @@ background: linear-gradient(90deg, rgba(169,154,255,1) 0%, rgba(255,196,235,1) 1
 
 }
 
-.Heading{
+.About-heading{
     text-align: center;
     font-size: 4.5rem;
 }
@@ -218,3 +218,71 @@ background: linear-gradient(90deg, rgba(169,154,255,1) 0%, rgba(255,196,235,1) 1
     font-size: 1.5rem;
 }
 
+.service h2{
+    margin-bottom: 5rem;
+
+}
+
+.services-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.services-container .service-box{
+
+    flex: 1 1 20rem;
+    padding: 3rem 2rem 4rem;
+    background: rgb(147,165,207);
+    background: linear-gradient(43deg, rgba(147,165,207,1) 5%, rgba(228,239,233,1) 100%);
+    border: 0.3rem solid var(--main-color);
+    border-radius:  2rem;
+    text-align: center;
+    transition: 0.5s ease;
+
+}
+
+.services-container .service-box:hover{
+    border-color: #000000;
+    transform: scale(1.02);
+}
+
+.service-btn{
+    display: inline-block;
+    padding: 0.4rem 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #003457;
+    border-radius: 4rem;
+    transition: .5s ease;
+    background: rgb(133,157,204);
+    background: linear-gradient(43deg, rgba(133,157,204,1) 5%, rgba(206,249,254,1) 100%);
+
+}
+
+.service-box i{
+    font-size: 7rem;
+    color: #003457;
+}
+
+.service-box h3{
+    font-size: 2.6rem;
+    
+}
+
+.service-box p{
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
+}
+
+.service-box:hover{
+   box-shadow: 0 0 1rem #828586;
+}
+
+.service-heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
